@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <header>
+    <center>
+      <h1>Curriculum Vitae</h1>
+      <hr>
+    </center>
+  </header>
+  
+ <button id="Volver" onclick="window.history.back()">Regresar</button> <!--Boton de regresar-->
+
+
+  <form action="/lab3/CVK.html" method="get"> 
+
+    <section>
+      <fieldset>
+        <legend><h1>Sección de Datos Generales</h1></legend>
+        <label for="imagen1">Foto: </label>
+        <input type="file" id="imagen1">
+        <br>
+
+        <label for="dato1">Fecha de nacimiento: </label>
+        <input type="date" id="dato1">
+        <br>
+
+        <label for="dato2">Cedula: </label>
+        <input type="text" id="">
+        <br>
+
+        <label for="dato3">Nacionalidad: </label>
+        <input type="text" id="dato3">
+        <br>
+
+        <label for="dato4">Estado Civil: </label>
+        <select name="dato4" id="dato4">
+          <option value="Soltero">Soltero</option>
+          <option value="Casado">Casado</option>
+          <option value="Viudo">Viudo</option>
+        </select><br>
+
+        <label for="dato5" required>Email: </label>
+        <input type="email" id="dato5">
+        <br>
+      </fieldset>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend><h1>Sección de Experiencia</h1></legend>
+        <label for="exp1">Cargo: </label>
+        <input type="text" id="exp1">
+        <br>
+        
+        <label for="exp2">Puesto: </label>
+        <input type="text" id="exp2">
+        <br>
+
+        <label for="exp3">Tel: </label>
+        <input type="tel" id="exp3">
+        <br>
+
+        <label for="exp4">Desde: </label>
+        <input type="date" id="exp4">
+        
+        <label for="exp4.1">Hasta: </label>
+        <input type="date" id="exp4.1">
+        <br>
+
+        <label for="exp5">Descripcion: </label>
+        <input type="text" id="exp5">
+      </fieldset>
+      <br>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend><h1>Sección de Educación</h1></legend>
+
+        <label for="u1">Universidad: </label>
+        <input type="text" id="u1">
+        <br>
+
+        <label for="u2">Carrera: </label>
+        <input type="text" id="u2">
+        <br>
+
+        <label for="u3">Educación Primaria: </label>
+        <input type="text" id="u3">
+        <br>
+
+        <label for="u4">Educación Secundaria</label>
+        <input type="text" id="u4">
+        <br>
+
+        <label for="u5">Bachillerato</label>
+        <input type="text" id="u5">
+      </fieldset>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend><h1>Sección de Conocimientos</h1></legend>
+
+        <label for="c1">Conocimientos: </label>
+        <input type="text" id="c1">
+      </fieldset>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend><h1>Sección Abierta</h1></legend>
+
+        <label for="ab1">Objetivos: </label>
+        <input type="text" id="ab1">
+      </fieldset>
+    </section>
+
+    <br>
+    <input type="submit" value="enviar">
+  </form>
+</body>
+</html>
+
